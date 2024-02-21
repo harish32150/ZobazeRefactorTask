@@ -33,7 +33,7 @@ inline fun <T, R> KResult<T>.map(transform: (value: T) -> R): KResult<R> =
         is KResult.Loading -> KResult.Loading
     }
 
-/** Handle provides abstracted functionality to handle [KResult] gracefully */
+/** Provides abstracted functionality to handle [KResult] gracefully */
 inline fun <T> KResult<T>.handle(
     onSuccess: (T) -> Unit,
     onLoading: (Boolean) -> Unit = {},
