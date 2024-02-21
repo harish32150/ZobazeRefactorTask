@@ -13,6 +13,7 @@ import java.util.Scanner
 
 
 
+@Deprecated("Created EmployeeListActivity as refactor of MainActivity")
 class MainActivity : Activity() {
     var containerLayout: LinearLayout? = null
     override fun onCreate(savedInstanceState: Bundle?) {

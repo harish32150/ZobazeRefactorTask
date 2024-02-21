@@ -16,7 +16,7 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideEmployeeService(): EmployeeService =
-        provideRetrofit("https://dummy.restapiexample.com/api")
+        provideRetrofit("https://dummy.restapiexample.com/api/")
             .create(EmployeeService::class.java)
 
 

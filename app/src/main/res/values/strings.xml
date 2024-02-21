@@ -2,4 +2,5 @@
     <string name="app_name">Zobaze Refractor Task</string>
     <string name="label_emp_id">EmpID</string>
     <string name="label_emp_name">EmpName</string>
+    <string name="label_loading">Please wait...</string>
 </resources>
