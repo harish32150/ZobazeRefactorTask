@@ -1,14 +1,14 @@
 package com.zobaze.zobazerefractortask.data.datasource.remote
 
+import com.google.gson.annotations.SerializedName
+import com.zobaze.zobazerefractortask.domain.entity.Employee
+
 data class EmployeeApiModel(
-    /*"id":1,
-    "employee_name":"Tiger Nixon",
-"employee_salary":320800,
-"employee_age":61,
-"profile_image":""*/
-    val id: String,
-    val name: String,
-    val salary: Long,
-    val age: Int,
-    val profileImage: String?
-)
+    @SerializedName("id") val id: String,
+    @SerializedName("employee_name") val name: String,
+    @SerializedName("employee_salary") val salary: Long,
+    @SerializedName("employee_age") val age: Int,
+    @SerializedName("profile_image") val profileImage: String?
+) {
+    fun toEmployee(): Employee = Employee(id, name, salary, age, profileImage)
+}
