@@ -1,7 +1,7 @@
 package com.zobaze.zobazerefractortask.domain.entity
 
 data class Employee(
-    val id: String,
+    val id: Int,
     val name: String,
     val salary: Long,
     val age: Int,

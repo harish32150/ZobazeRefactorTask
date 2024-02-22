@@ -26,7 +26,7 @@ internal class EmployeeListAdapter :
 
         fun bind(data: Employee) {
             binding.apply {
-                textEmpId.text = data.id
+                textEmpId.text = data.id.toString()
                 textEmpName.text = data.name
             }
         }

@@ -86,12 +86,21 @@
         android:visibility="gone">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_error_title"
+            style="@style/TextAppearance.Material3.TitleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@string/label_error" />
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_error"
             style="@style/TextAppearance.Material3.BodyLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="16dp"
+            android:layout_marginTop="36dp"
             tools:text="Unknown Error" />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

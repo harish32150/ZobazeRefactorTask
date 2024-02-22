@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 import com.zobaze.zobazerefractortask.domain.entity.Employee
 
 data class EmployeeApiModel(
-    @SerializedName("id") val id: String,
+    @SerializedName("id") val id: Int,
     @SerializedName("employee_name") val name: String,
     @SerializedName("employee_salary") val salary: Long,
     @SerializedName("employee_age") val age: Int,
