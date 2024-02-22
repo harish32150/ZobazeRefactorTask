@@ -6,6 +6,9 @@ import com.zobaze.zobazerefractortask.domain.map
 import com.zobaze.zobazerefractortask.domain.repository.EmployeeRepository
 import javax.inject.Inject
 
+/**
+ * Provides [Employee] list in desired listing order
+ */
 class EmployeeListInSequenceUseCase @Inject constructor(private val repository: EmployeeRepository) {
     suspend operator fun invoke(): KResult<List<Employee>> =  repository.getAllEmployees()
         .map { _list ->
